@@ -6,4 +6,165 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Ubuntu;
 }
+
+/* SERVICES */
+.services {
+  height: 150vh;
+  width: 100%;
+  background-color: #E9F8F1;
+  border: 1px solid red;
+}
+
+.services h2 {
+  font-size: 32px;
+  color: #2D5E7F;
+  text-align: center;
+  margin: 65px 0px 65px 0px;
+}
+
+.services h3 {
+  font-size: 18px;
+  color: #2D5E7F;
+}
+
+/* Les deux colonnes sont sur la même ligne */
+.services-container-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* Colonnes */
+.services-container-column {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+/* Bouton */
+.services .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #57CC99;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.services .button:hover {
+  background-color: #419973;
+}
+
+/* Conteneur circulaire */
+.circle-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border: 2px dashed #ccc;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.circle {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #3498db;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  /* textes centrés dans la div */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.arrow {
+  position: absolute;
+  background-image: url(/services-img/arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+}
+
+/* Disposition circulaire avec transform */
+.circle:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg) translate(200px) rotate(-0deg);
+}
+
+.arrow:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(36deg) translate(250px) rotate(130deg);
+}
+
+.circle:nth-child(3) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(72deg) translate(200px) rotate(-72deg);
+}
+
+.arrow:nth-child(4) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(108deg) translate(250px) rotate(130deg);
+}
+
+.circle:nth-child(5) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(144deg) translate(200px) rotate(-144deg);
+}
+
+.arrow:nth-child(6) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg) translate(250px) rotate(130deg);
+}
+
+.circle:nth-child(7) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(216deg) translate(200px) rotate(-216deg);
+}
+
+.arrow:nth-child(8) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(252deg) translate(250px) rotate(130deg);
+}
+
+.circle:nth-child(9) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(288deg) translate(200px) rotate(-288deg);
+}
+
+.arrow:nth-child(10) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(324deg) translate(250px) rotate(130deg);
+}
+
+/* Effet d'agrandissement */
+.circle:hover {
+  transform: all 0.7s ease-in-out;
+  height: 200px;
+  width: 200px;
+  background-color: #2980b9;
+  cursor: pointer;
+}
+
+/* Tooltip cercles*/
+
+/* SERVICES RESPONSIVE */
