@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twini</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons/css/all/all.css">
 </head>
 
 <body>
@@ -25,20 +26,86 @@
         </section>
         <!--testimonial la section qui affiche les commentaires avec un bouton qui ramene a la page de realisation de projet-->
         <section class="testimonial">
-            <img src="" alt="">
-            <div>
-                <h1>Témoignages</h1>
-                <i class="fi fi-sc-quote-right"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deserunt dicta, sapiente vel
-                    laborum iusto expedita dolorem, dignissimos illum aperiam neque. Temporibus eaque quidem provident
-                    fuga quia cupiditate a tempora.</p>
-                <p>Stéphanie SORHOUET</p>
-                <p>Responsable developpement commercial-Somocap</p>
-                <button type="submit">Voir le projet</button>
-                <i class="fi fi-rr-arrow-left"></i>
-                <i class="fi fi-rr-arrow-right"></i>
+            <h1>Témoignages</h1>
+            <!--div carousel c'est le container qui contient tous les slides-->
+            <div class="carousel">
+                <!--div carousel-item qui contient les contenus de chaque slide-->
+                <!--slide 1-->
+                <div class="carousel-item active">
+                    <div class="container-comment">
+                        <img src="/img-temoignage/Photo%20St%C3%A9phanie%20Sourouet.jpg" alt="Photo Stéphanie Sourouet"
+                            class="perso-img">
+                        <div class="comment-para">
+                            <img src="/img-temoignage/quote.png" alt="Quote">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deserunt dicta,
+                                sapiente vel
+                                laborum iusto expedita dolorem, dignissimos illum aperiam neque. Temporibus eaque
+                                quidem provident
+                                fuga quia cupiditate a tempora.</p>
+                            <button type="submit">Voir le projet</button>
+                            <h5>Stéphanie SORHOUET</h5>
+                            <h6>Responsable developpement commercial-Somocap</h6>
+                        </div>
+                    </div>
+                </div>
+                <!--slide 2-->
+                <div class="carousel-item">
+                    <div class="container-comment">
+                        <img src="/img-temoignage/Photo Antoine BOUCHEREAU PP.png" alt="Photo Jean Dupont"
+                            class="perso-img">
+                        <div class="comment-para">
+                            <img src="/img-temoignage/quote.png" alt="Quote">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum repellat reiciendis
+                                alias quidem,
+                                adipisci voluptas in a expedita cumque facere voluptatem eaque.</p>
+                            <button type="submit">Voir le projet</button>
+                            <h5>Antoine BOUCHEREAU</h5>
+                            <h6>Co-Fondateur Resak</h6>
+
+                        </div>
+                    </div>
+                </div>
+                <!--slide 3-->
+                <div class="carousel-item">
+                    <div class="container-comment">
+                        <img src="/img-temoignage/Photo Helene Cousin PP France1.jpg" alt="Photo Jean Dupont"
+                            class="perso-img">
+                        <div class="comment-para">
+                            <img src="/img-temoignage/quote.png" alt="Quote">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum repellat reiciendis
+                                alias quidem,
+                                adipisci voluptas in a expedita cumque facere voluptatem eaque.</p>
+                            <button type="submit">Voir le projet</button>
+                            <h5>Helene Cousin</h5>
+                            <h6>Co-Fondatrice Precious Plastic France</h6>
+                        </div>
+                    </div>
+                </div>
+                <!--slide 4-->
+                <div class="carousel-item">
+                    <div class="container-comment">
+                        <img src="/img-temoignage/Photo Lorenzo Barrail.jpg" alt="Photo Jean Dupont" class="perso-img">
+                        <div class="comment-para">
+                            <img src="/img-temoignage/quote.png" alt="Quote">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deserunt dicta,
+                                sapiente vel
+                                laborum iusto expedita dolorem, dignissimos illum aperiam neque. Temporibus eaque
+                                quidem provident
+                                fuga quia cupiditate a tempora.</p>
+                            <button type="submit">Voir le projet</button>
+                            <h5>Lorenzo Barrail</h5>
+                            <h6>Fondateur - La Pese</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <div class="carousel-controls">
+                    <i class="fi fi-rr-arrow-left control prev"></i>
+                    <i class="fi fi-rr-arrow-right control next"></i>
+                </div>
             </div>
         </section>
+
         <!--news la section qui affiche les actualites de l'entreprise-->
         <section class="news">
 
@@ -58,5 +125,6 @@
     </main>
     <footer></footer>
 </body>
+<script src="script.js"></script>
 
 </html>
