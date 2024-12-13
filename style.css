@@ -470,3 +470,170 @@ h3{
 
 
 /* SERVICES RESPONSIVE */
+
+
+/* section principale */
+.testimonial {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* style de titre de ce section */
+h1 {
+  padding: 80px 0 0 30px;
+  font-size: 50px;
+  color: #22577A;
+  width: 100%;
+}
+
+/* Carousel Styles */
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  /* Cache les éléments qui dépassent de la zone visible */
+  position: relative;
+  /* Pour faciliter le positionnement des éléments enfants */
+}
+
+/* Style le contenu de chaque item ou slide */
+.carousel-item {
+  width: 80%;
+  height: 30%;
+  text-align: left;
+  position: absolute;
+  /* Permet de positionner les éléments au-dessus les uns des autres */
+  top: 20px;
+  opacity: 0;
+  /* Rendre les éléments invisibles par défaut */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  /* Animation fluide pour la position et la visibilité */
+  transform: translateX(100%);
+  /* Par défaut, l'élément est en dehors de l'écran à droite */
+}
+
+.carousel-item.active {
+  opacity: 1;
+  /* Seulement l'élément actif sera visible */
+  transform: translateX(0);
+  /* L'élément actif est au centre */
+}
+
+/* animation slide */
+.carousel-item.exit-left {
+  transform: translateX(100%);
+  /* Sort par la droite */
+  opacity: 0;
+}
+
+/* animation slide */
+.carousel-item.exit-right {
+  transform: translateX(-100%);
+  /* Sort par la gauche */
+  opacity: 0;
+}
+
+.container-comment {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  /* espace entre l'image et le bloc de commentaire */
+}
+
+/* style image */
+.perso-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 50px;
+
+}
+
+.comment-para p {
+  color: #22577A;
+  font-size: 16px;
+}
+
+.comment-para h5,
+.comment-para h6 {
+  color: #22577A;
+}
+.right-guillemet{
+margin-left: 550px;
+}
+
+button {
+  background-color: #57CC99;
+  
+  border: 1px solid #57CC99;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.1s;
+  display: block;
+  margin-left: auto;
+  margin-top: 30px;
+}
+button:hover{
+  background-color: transparent;
+}
+button a{
+  color: white;
+  transition: color 0.2s;
+}
+/* animation bouton */
+button a:hover {
+  color: #57CC99;
+}
+
+/* positionement des fleches */
+.carousel-controls {
+  position: absolute;
+  top: 85%;
+  left: 80%;
+
+}
+
+/* style control */
+.control {
+  font-size: 24px;
+  cursor: pointer;
+  color: #22577a98;
+  padding: 20px;
+  border-radius: 50%;
+  user-select: none;
+  transition: color 0.3s;
+}
+
+.control:hover {
+  color: #22577A;
+}
+.projet-cache{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  background-color: #22577A;
+}
+.projet-cache h1, .projet-cache p, .projet-cache i{
+  color: white;
+  padding-bottom: 20px;
+}
+.projet-cache img{
+  width: 450px;
+  height: 350px;
+}
+#description{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
