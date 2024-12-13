@@ -637,6 +637,34 @@ h3{
 }
 /* actualités fin */
 
+/* Formulaires contact, newsletter, pop up*/
+h2{
+  display: flex;               
+  flex-direction: column;      
+  justify-content: center;      
+  align-items: center;         
+  text-align: center;          
+  color: #22577A;
+}
+
+.newsletter, .contact, .popupContact{
+  background-color: #E9F8F1;
+  }
+
+  .newsletter, .contact, .popupContact p {
+font-size: 21px;
+color:#22577A ;
+text-align: center;                      
+line-height: 1.6;
+  }
+
+/* contact  */
+.formulaire-contact {
+height: 55rem; 
+background-color: #E9F8F1;
+} 
+/* Formulaires contact, newsletter, pop up fin*/
+
 /* footer */
 .footer-section ul li {
   margin-bottom: 10px;
@@ -739,3 +767,8 @@ footer {
   font-family: Ubuntu;
 }
 /* footer fin*/
+
+
+
+
+
