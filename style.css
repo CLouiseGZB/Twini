@@ -6,4 +6,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Ubuntu;
 }
+
+.news{
+  background: no-repeat center/100% url(images/fond-twini_Page_2.jpg);
+  height: 35rem;
+}
+
+article{
+  border: solid 1px #C2D1D9;
+}
+
