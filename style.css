@@ -1,9 +1,8 @@
-
 footer {
   height: 200px;
   width: 100%;
   background-color: #22577A;
-  color: #ffffff; 
+  color: #ffffff;
   font-size: 14px;
 }
 
@@ -12,22 +11,25 @@ footer {
   justify-content: space-evenly;
   align-items: flex-start;
   padding: 20px 40px;
-  border-bottom: 1px solid #ffffff33; 
+  border-bottom: 1px solid #ffffff33;
 }
 
 .footer-section {
-  padding: 0 ;
+  padding: 0;
 }
 
 .logo-desc {
   width: 60%;
 }
-.about, .contact{
+
+.about,
+.contact {
   width: 20%;
   /* haut | droit | bas | gauche */
   padding: 20px 0 0 20px;
-  
+
 }
+
 .footer-logo {
   width: 35px;
   height: 45px;
@@ -47,14 +49,16 @@ footer {
 }
 
 .social-icons a:hover {
-  color: #57CC99; /* Change color on hover */
+  color: #57CC99;
+  /* Change color on hover */
 }
 
-.ligne{
+.ligne {
   width: 1px;
   height: 150px;
   background-color: #C7F9CC;
 }
+
 .footer-section h4 {
   font-size: 16px;
   margin-bottom: 10px;
@@ -75,7 +79,8 @@ footer {
   color: #ffffff;
   transition: color 0.3s;
 }
-.footer-section ul li a:hover{
+
+.footer-section ul li a:hover {
   color: #57CC99;
 }
 
@@ -90,7 +95,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
-  background-color: #1b4357; 
+  background-color: #1b4357;
   font-size: 12px;
 }
 
