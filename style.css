@@ -1,13 +1,4 @@
-/* Import de la font Ubuntu */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/* Rénitialisation des marges et des espacements */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Ubuntu;
-}
 
 /* Section A propos de nous */
 .about{
@@ -52,19 +43,9 @@
   text-align: center;
 }
 
-.ceoText{
-  /* border: solid 1px yellow; */
-  /* width: 50%; */
-}
 
 .ceoText p{
   padding: 0 2rem;
-}
-
-.schema{
-  /* border: solid 1px green; */
-  /* width: 50%; */
-
 }
 
 .schema figcaption{
