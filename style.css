@@ -16,5 +16,9 @@
 
 article{
   border: solid 1px #C2D1D9;
+  background-color: white;
+  border-radius: 2px;
+  width: 16rem;
+  height: 29rem;
 }
 
