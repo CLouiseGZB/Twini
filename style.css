@@ -76,6 +76,12 @@ nav button:hover a {
   color: #22577A; /* Change la couleur du lien à l'intérieur */
   transition: 0.1s;
 }
+
+nav div{
+  display: flex;
+  flex-direction: row;
+  
+}
 /* navbar fin */
 
 /* Header */
