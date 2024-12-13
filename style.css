@@ -14,7 +14,9 @@
   height: 150vh;
   width: 100%;
   background-color: #E9F8F1;
-  border: 1px solid red;
+
+  /* force la section a avoir les margin et padding des enfants */
+  overflow: hidden;
 }
 
 .services h2 {
@@ -27,6 +29,14 @@
 .services h3 {
   font-size: 18px;
   color: #2D5E7F;
+}
+
+#h3-blue {
+  color: #03045E;
+}
+
+#h3-green {
+  color: #22577a;
 }
 
 /* Les deux colonnes sont sur la même ligne */
@@ -48,7 +58,6 @@
 .services .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #57CC99;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -56,8 +65,22 @@
   font-size: 16px;
 }
 
-.services .button:hover {
-  background-color: #419973;
+.services #button-blue {
+  background-color: #00B4D8;
+}
+
+.services #button-blue:hover {
+  background-color: white;
+  color: #00B4D8;
+}
+
+.services #button-green {
+  background-color: #57CC99;
+}
+
+.services #button-green:hover {
+  background-color: white;
+  color: #57CC99;
 }
 
 /* Conteneur circulaire */
@@ -65,7 +88,7 @@
   position: relative;
   width: 600px;
   height: 600px;
-  border: 2px dashed #ccc;
+  /* border: 2px dashed #ccc; */
   border-radius: 50%;
   margin: auto;
 }
@@ -75,15 +98,66 @@
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background-color: #3498db;
+  /* background-color: #3498db; */
+  color: white;
   transform: translate(-50%, -50%);
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: background-color 2s ease, height 2s ease, width 2s ease;
 
   /* textes centrés dans la div */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+/* Couleurs des cercles */
+#circle-one {
+  background-color: #03045E;
+}
+
+#circle-two {
+  background-color: #023E8A;
+}
+
+#circle-three {
+  background-color: #0077B6;
+}
+
+#circle-four {
+  background-color: #0096C7;
+}
+
+#circle-five {
+  background-color: #00B4D8;
+}
+
+#circle-six {
+  background-color: #22577a;
+}
+
+#circle-seven {
+  background-color: #2D7D90;
+}
+
+#circle-eight {
+  background-color: #38A3A5;
+}
+
+#circle-nine {
+  background-color: #48B89F;
+}
+
+#circle-ten {
+  background-color: #57CC99;
+}
+
+
+/* Effet d'agrandissement sur les petits cercles */
+.circle:hover {
+  height: 200px;
+  width: 200px;
+  background-color: #2980b9;
+  cursor: pointer;
 }
 
 .arrow {
@@ -156,15 +230,33 @@
   transform: translate(-50%, -50%) rotate(324deg) translate(250px) rotate(130deg);
 }
 
-/* Effet d'agrandissement */
-.circle:hover {
-  transform: all 0.7s ease-in-out;
-  height: 200px;
-  width: 200px;
-  background-color: #2980b9;
-  cursor: pointer;
+/* Tooltip cercles*/
+.tooltip {
+  position: relative;
 }
 
-/* Tooltip cercles*/
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: white;
+  /* background-color: black; */
+  /* opacity: .5; */
+  color: #00B4D8;
+  text-align: center;
+
+  /* positionnement du tooltip */
+  position: absolute;
+  z-index: 2;
+
+  /* textes centrés dans la div */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
 
 /* SERVICES RESPONSIVE */
