@@ -9,35 +9,6 @@
   font-family: Ubuntu;
 }
 
-/* Header */
-header{
-  background: no-repeat center/100% url(images/fond-twini_Page_1.jpg);
-  height: 35rem;
-}
-
-header section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* border: solid 1px red; */
-  height: 35rem;
-  width: 100%;
-}
-
-header h2{
-  color: white
-}
-
-.button{
-  margin-top: 1rem;
-}
-
-
-
-  font-family: Ubuntu;
-}
-
 /* Navbar */
 nav {
   position: fixed; /* Fixe la navbar en haut de la page */
@@ -106,6 +77,29 @@ nav button:hover a {
 }
 /* navbar fin */
 
+/* Header */
+header{
+  background: no-repeat center/100% url(images/fond-twini_Page_1.jpg);
+  height: 35rem;
+}
+
+header section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: solid 1px red; */
+  height: 35rem;
+  width: 100%;
+}
+
+header h2{
+  color: white
+}
+
+.button{
+  margin-top: 1rem;
+}
 
 /* actualités */
 .news{
