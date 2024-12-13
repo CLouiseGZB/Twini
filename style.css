@@ -10,6 +10,11 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* Navbar */
 nav {
   position: fixed; /* Fixe la navbar en haut de la page */
@@ -778,4 +783,31 @@ footer {
 
 
 
+/* partenaires */
+/* Style global pour la section des partenaires */
+.partenaires {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; 
+  /* border: solid red 1px; */
+}
+
+/* Style pour chaque élément du carrousel */
+.partenaires div {
+  width: 100%;
+  text-align: center; 
+  display: none; 
+  transition: opacity 0.5s ease-in-out; 
+}
+
+.partenaires div.active {
+  display: block; 
+  opacity: 1;
+}
+
+/* Style pour les images */
+.partenaires img {
+font-size: 20px;
+}
 

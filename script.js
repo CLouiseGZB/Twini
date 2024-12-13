@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Variables globales
 let currentIndex = 0;
 const items = document.querySelectorAll('.carousel-item');
@@ -44,3 +45,16 @@ document.querySelector('.carousel-controls .prev').addEventListener('click', pre
 
 
 setInterval(nextItem, 5000); // Changer l'élément actif toutes les 5 secondesf
+=======
+document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.partenaires div');
+    let currentIndex = 0;
+  
+    setInterval(() => {
+      items[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % items.length;
+      items[currentIndex].classList.add('active');
+    }, 2000);
+  });
+  
+>>>>>>> 7b801e707486b9ffa526a7eceed6a3f0c92b01bb
