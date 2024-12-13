@@ -9,67 +9,6 @@
   font-family: Ubuntu;
 }
 
-.news{
-  background: no-repeat center/100% url(images/fond-twini_Page_2.jpg);
-  height: 38rem;
-  color: #22577A;
-}
-
-.news h2{
-  color:  white;
-  text-align: center;
-  font-size: 50px;
-  padding-block: 2rem;
-}
-
-.news div{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-article {
-  border: solid 1.5px #C2D1D9;
-  background-color: white;
-  border-radius: 2px;
-  width: 16.6rem;
-  height: 29rem;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide */
-}
-
-article:hover {
-  transform: scale(1.05); /* Agrandissement léger */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Ombre douce */
-  border-color: #22577A; /* Changement de couleur de bordure au survol */
-}
-
-
-article img{
-  border-radius: 2px;
-}
-
-article figcaption{
-  margin: 10px 10px 0px;
-}
-
-.description{
-  /* border: solid 1px hotpink; */
-  display: flex;
-  flex-direction: column;
-  align-items: inherit !important;
-}
-
-h3{
-  margin: 10px;
-}
-
-.description p{
-  margin-inline: 10px;
-  font-size: 17px;
-  font-family: Ubuntu;
-}
-
 /* Navbar */
 nav {
   position: fixed; /* Fixe la navbar en haut de la page */
@@ -137,3 +76,67 @@ nav button:hover a {
   transition: 0.1s;
 }
 /* navbar fin */
+
+
+/* actualités */
+.news{
+  background: no-repeat center/100% url(images/fond-twini_Page_2.jpg);
+  height: 38rem;
+  color: #22577A;
+}
+
+.news h2{
+  color:  white;
+  text-align: center;
+  font-size: 50px;
+  padding-block: 2rem;
+}
+
+.news div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+article {
+  border: solid 1.5px #C2D1D9;
+  background-color: white;
+  border-radius: 2px;
+  width: 16.6rem;
+  height: 29rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide */
+}
+
+article:hover {
+  transform: scale(1.05); /* Agrandissement léger */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Ombre douce */
+  border-color: #22577A; /* Changement de couleur de bordure au survol */
+}
+
+
+article img{
+  border-radius: 2px;
+}
+
+article figcaption{
+  margin: 10px 10px 0px;
+}
+
+.description{
+  /* border: solid 1px hotpink; */
+  display: flex;
+  flex-direction: column;
+  align-items: inherit !important;
+}
+
+h3{
+  margin: 10px;
+}
+
+.description p{
+  margin-inline: 10px;
+  font-size: 17px;
+}
+/* actualités fin */
+
