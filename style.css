@@ -17,18 +17,22 @@ html {
 
 /* Navbar */
 nav {
-  position: fixed; /* Fixe la navbar en haut de la page */
-  top: 0; /* Positionner la navbar en haut */
+  position: fixed;
+  /* Fixe la navbar en haut de la page */
+  top: 0;
+  /* Positionner la navbar en haut */
   left: 0;
-  width: 100%; /* S'assurer qu'elle s'étend sur toute la largeur */
+  width: 100%;
+  /* S'assurer qu'elle s'étend sur toute la largeur */
   height: 61px;
   background-color: #22577A;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
-  padding: 0 20px; 
+  justify-content: space-between;
+  padding: 0 20px;
   color: white;
-  z-index: 1000; /* S'assurer qu'elle est au-dessus des autres éléments */
+  z-index: 1000;
+  /* S'assurer qu'elle est au-dessus des autres éléments */
 }
 
 nav ul {
@@ -37,7 +41,7 @@ nav ul {
 
 nav li {
   list-style: none;
-  margin: 0 15px; 
+  margin: 0 15px;
 }
 
 nav li a:hover {
@@ -49,7 +53,7 @@ nav a {
 }
 
 nav li a {
-  text-decoration: none; 
+  text-decoration: none;
   font-weight: normal;
   font-size: 1rem;
 }
@@ -72,30 +76,34 @@ nav button a {
 }
 
 nav button:hover {
-  background-color: white; /* Couleur de fond au survol */
-  color: #22577A; /* Couleur du texte */
+  background-color: white;
+  /* Couleur de fond au survol */
+  color: #22577A;
+  /* Couleur du texte */
   transition: 0.1s;
 }
 
 nav button:hover a {
-  color: #22577A; /* Change la couleur du lien à l'intérieur */
+  color: #22577A;
+  /* Change la couleur du lien à l'intérieur */
   transition: 0.1s;
 }
 
-nav div{
+nav div {
   display: flex;
   flex-direction: row;
-  
+
 }
+
 /* navbar fin */
 
 /* Header */
-header{
+header {
   background: no-repeat center/100% url(images/fond-twini_Page_1.jpg);
   height: 35rem;
 }
 
-header section{
+header section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,27 +113,27 @@ header section{
   width: 100%;
 }
 
-header h2{
+header h2 {
   color: white
 }
 
-.button{
+.button {
   margin-top: 1rem;
 }
 
 /* Section A propos de nous */
-.about{
+.about {
   /* display: flex; */
   padding: 0 2rem;
   color: #22577A;
 }
 
-.about h2{
+.about h2 {
   font-size: 3.5rem;
   margin-top: 1rem 0;
 }
 
-.containerCeo{
+.containerCeo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,13 +141,13 @@ header h2{
   padding: 2rem 0;
 }
 
-.ceoLeft{
+.ceoLeft {
   /* border: solid 1px pink; */
   width: 50%;
 
 }
 
-.ceo{
+.ceo {
   /* border: solid 1px red; */
   display: flex;
   align-items: center;
@@ -147,40 +155,38 @@ header h2{
   /* width: 50%; */
 }
 
-.ceo img{
+.ceo img {
   border-radius: 100%;
   width: 7.5rem;
 }
 
-.ceo figcaption{
+.ceo figcaption {
   text-align: center;
 }
 
 
-.ceoText p{
+.ceoText p {
   padding: 0 2rem;
 }
 
-.schema figcaption{
+.schema figcaption {
   text-align: center;
   font-weight: bold;
 }
 
 /* SERVICES */
 .services {
-  height: 150vh;
   width: 100%;
   background-color: #E9F8F1;
-
-  /* force la section a avoir les margin et padding des enfants */
-  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .services h2 {
   font-size: 32px;
   color: #2D5E7F;
   text-align: center;
-  margin: 65px 0px 65px 0px;
+  margin-bottom: 50px;
 }
 
 .services h3 {
@@ -513,13 +519,14 @@ h1 {
 .comment-para h6 {
   color: #22577A;
 }
-.right-guillemet{
-margin-left: 550px;
+
+.right-guillemet {
+  margin-left: 550px;
 }
 
 button {
   background-color: #57CC99;
-  
+
   border: 1px solid #57CC99;
   padding: 10px 20px;
   border-radius: 4px;
@@ -529,13 +536,16 @@ button {
   margin-left: auto;
   margin-top: 30px;
 }
-button:hover{
+
+button:hover {
   background-color: transparent;
 }
-button a{
+
+button a {
   color: white;
   transition: color 0.2s;
 }
+
 /* animation bouton */
 button a:hover {
   color: #57CC99;
@@ -563,7 +573,8 @@ button a:hover {
 .control:hover {
   color: #22577A;
 }
-.projet-cache{
+
+.projet-cache {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -571,36 +582,42 @@ button a:hover {
   height: 600px;
   background-color: #22577A;
 }
-.projet-cache h1, .projet-cache p, .projet-cache i{
+
+.projet-cache h1,
+.projet-cache p,
+.projet-cache i {
   color: white;
   padding-bottom: 20px;
 }
-.projet-cache img{
+
+.projet-cache img {
   width: 450px;
   height: 350px;
 }
-#description{
+
+#description {
   display: flex;
   flex-direction: column;
   width: 40%;
 }
+
 /* Témoignages fin */
 
 /* actualités */
-.news{
+.news {
   background: no-repeat center/100% url(images/fond-twini_Page_2.jpg);
   height: 38rem;
   color: #22577A;
 }
 
-.news h2{
-  color:  white;
+.news h2 {
+  color: white;
   text-align: center;
   font-size: 50px;
   padding-block: 2rem;
 }
 
-.news div{
+.news div {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -613,68 +630,78 @@ article {
   width: 16.6rem;
   height: 29rem;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Animation fluide */
 }
 
 article:hover {
-  transform: scale(1.05); /* Agrandissement léger */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Ombre douce */
-  border-color: #22577A; /* Changement de couleur de bordure au survol */
+  transform: scale(1.05);
+  /* Agrandissement léger */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  /* Ombre douce */
+  border-color: #22577A;
+  /* Changement de couleur de bordure au survol */
 }
 
 
-article img{
+article img {
   border-radius: 2px;
 }
 
-article figcaption{
+article figcaption {
   margin: 10px 10px 0px;
 }
 
-.description{
+.description {
   /* border: solid 1px hotpink; */
   display: flex;
   flex-direction: column;
   align-items: inherit !important;
 }
 
-h3{
+h3 {
   margin: 10px;
 }
 
-.description p{
+.description p {
   margin-inline: 10px;
   font-size: 17px;
 }
+
 /* actualités fin */
 
 /* Formulaires contact, newsletter, pop up*/
-h2{
-  display: flex;               
-  flex-direction: column;      
-  justify-content: center;      
-  align-items: center;         
-  text-align: center;          
+h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: #22577A;
 }
 
-.newsletter, .contact, .popupContact{
+.newsletter,
+.contact,
+.popupContact {
   background-color: #E9F8F1;
   /* border: solid 1px red; */
-  }
+}
 
-  .newsletter, .contact, .popupContact p {
-font-size: 21px;
-color:#22577A ;
-text-align: center;                      
-line-height: 1.6;
-  }
+.newsletter,
+.contact,
+.popupContact p {
+  font-size: 21px;
+  color: #22577A;
+  text-align: center;
+  line-height: 1.6;
+}
 
 /* contact  */
 .formulaire-contact {
-height: 55rem; 
-background-color: #E9F8F1;
-} 
+  height: 55rem;
+  background-color: #E9F8F1;
+}
+
 /* Formulaires contact, newsletter, pop up fin*/
 
 /* footer */
@@ -687,7 +714,8 @@ background-color: #E9F8F1;
   color: #ffffff;
   transition: color 0.3s;
 }
-.footer-section ul li a:hover{
+
+.footer-section ul li a:hover {
   color: #57CC99;
 }
 
@@ -702,7 +730,7 @@ background-color: #E9F8F1;
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
-  background-color: #1b4357; 
+  background-color: #1b4357;
   font-size: 12px;
 }
 
@@ -714,7 +742,7 @@ footer {
   height: 200px;
   width: 100%;
   background-color: #22577A;
-  color: #ffffff; 
+  color: #ffffff;
   font-size: 14px;
 }
 
@@ -723,22 +751,25 @@ footer {
   justify-content: space-evenly;
   align-items: flex-start;
   padding: 20px 40px;
-  border-bottom: 1px solid #ffffff33; 
+  border-bottom: 1px solid #ffffff33;
 }
 
 .footer-section {
-  padding: 0 ;
+  padding: 0;
 }
 
 .logo-desc {
   width: 60%;
 }
-.aboutUs, .contactUs{
+
+.aboutUs,
+.contactUs {
   width: 20%;
   /* haut | droit | bas | gauche */
   padding: 20px 0 0 20px;
-  
+
 }
+
 .footer-logo {
   width: 35px;
   height: 45px;
@@ -758,14 +789,16 @@ footer {
 }
 
 .social-icons a:hover {
-  color: #57CC99; /* Change color on hover */
+  color: #57CC99;
+  /* Change color on hover */
 }
 
-.ligne{
+.ligne {
   width: 1px;
   height: 150px;
   background-color: #C7F9CC;
 }
+
 .footer-section h4 {
   font-size: 16px;
   margin-bottom: 10px;
@@ -778,6 +811,7 @@ footer {
   box-sizing: border-box;
   font-family: Ubuntu;
 }
+
 /* footer fin*/
 
 
@@ -789,25 +823,24 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px; 
+  height: 300px;
   /* border: solid red 1px; */
 }
 
 /* Style pour chaque élément du carrousel */
 .partenaires div {
   width: 100%;
-  text-align: center; 
-  display: none; 
-  transition: opacity 0.5s ease-in-out; 
+  text-align: center;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .partenaires div.active {
-  display: block; 
+  display: block;
   opacity: 1;
 }
 
 /* Style pour les images */
 .partenaires img {
-font-size: 20px;
+  font-size: 20px;
 }
-
