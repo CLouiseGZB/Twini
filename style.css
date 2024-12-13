@@ -649,7 +649,7 @@ h2{
 
 .newsletter, .contact, .popupContact{
   background-color: #E9F8F1;
-  border: solid 1px red;
+  /* border: solid 1px red; */
   }
 
   .newsletter, .contact, .popupContact p {
