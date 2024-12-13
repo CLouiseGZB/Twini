@@ -163,3 +163,58 @@ h3{
 }
 /* actualités fin */
 
+
+
+
+/* Section A propos de nous */
+.about{
+  /* display: flex; */
+  padding: 0 2rem;
+  color: #22577A;
+}
+
+.about h2{
+  font-size: 3.5rem;
+  margin-top: 1rem 0;
+}
+
+.containerCeo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: solid 1px turquoise; */
+  padding: 2rem 0;
+}
+
+.ceoLeft{
+  /* border: solid 1px pink; */
+  width: 50%;
+
+}
+
+.ceo{
+  /* border: solid 1px red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* width: 50%; */
+}
+
+.ceo img{
+  border-radius: 100%;
+  width: 7.5rem;
+}
+
+.ceo figcaption{
+  text-align: center;
+}
+
+
+.ceoText p{
+  padding: 0 2rem;
+}
+
+.schema figcaption{
+  text-align: center;
+  font-weight: bold;
+}
