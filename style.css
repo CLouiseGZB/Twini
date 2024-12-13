@@ -1,18 +1,16 @@
 /* SERVICES */
 .services {
-  height: 150vh;
   width: 100%;
   background-color: #E9F8F1;
-
-  /* force la section a avoir les margin et padding des enfants */
-  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .services h2 {
   font-size: 32px;
   color: #2D5E7F;
   text-align: center;
-  margin: 65px 0px 65px 0px;
+  margin-bottom: 50px;
 }
 
 .services h3 {
