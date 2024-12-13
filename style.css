@@ -1,71 +1,13 @@
+/* Import de la font Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-footer {
-  height: 200px;
-  width: 100%;
-  background-color: #22577A;
-  color: #ffffff; 
-  font-size: 14px;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  padding: 20px 40px;
-  border-bottom: 1px solid #ffffff33; 
-}
-
-.footer-section {
-  padding: 0 ;
-}
-
-.logo-desc {
-  width: 60%;
-}
-.about, .contact{
-  width: 20%;
-  /* haut | droit | bas | gauche */
-  padding: 20px 0 0 20px;
-  
-}
-.footer-logo {
-  width: 35px;
-  height: 45px;
-  margin: 10px 0 1px 0;
-}
-
-.logo-desc p {
-  margin: 10px 0;
-}
-
-.social-icons a {
-  display: inline-block;
-  margin-right: 10px;
-  color: #C7F9CC;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-.social-icons a:hover {
-  color: #57CC99; /* Change color on hover */
-}
-
-.ligne{
-  width: 1px;
-  height: 150px;
-  background-color: #C7F9CC;
-}
-.footer-section h4 {
-  font-size: 16px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.footer-section ul {
-  list-style: none;
+/* Rénitialisation des marges et des espacements */
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Ubuntu;
+  text-decoration: none;
 }
 
 /* Navbar */
@@ -159,71 +101,6 @@ header h2{
 .button{
   margin-top: 1rem;
 }
-
-/* actualités */
-.news{
-  background: no-repeat center/100% url(images/fond-twini_Page_2.jpg);
-  height: 38rem;
-  color: #22577A;
-}
-
-.news h2{
-  color:  white;
-  text-align: center;
-  font-size: 50px;
-  padding-block: 2rem;
-}
-
-.news div{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-article {
-  border: solid 1.5px #C2D1D9;
-  background-color: white;
-  border-radius: 2px;
-  width: 16.6rem;
-  height: 29rem;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide */
-}
-
-article:hover {
-  transform: scale(1.05); /* Agrandissement léger */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Ombre douce */
-  border-color: #22577A; /* Changement de couleur de bordure au survol */
-}
-
-
-article img{
-  border-radius: 2px;
-}
-
-article figcaption{
-  margin: 10px 10px 0px;
-}
-
-.description{
-  /* border: solid 1px hotpink; */
-  display: flex;
-  flex-direction: column;
-  align-items: inherit !important;
-}
-
-h3{
-  margin: 10px;
-}
-
-.description p{
-  margin-inline: 10px;
-  font-size: 17px;
-}
-/* actualités fin */
-
-
-
 
 /* Section A propos de nous */
 .about{
@@ -531,7 +408,7 @@ h3{
 /* SERVICES RESPONSIVE */
 
 
-/* section principale */
+/* Témoignages */
 .testimonial {
   width: 100%;
   margin: auto;
@@ -696,9 +573,71 @@ button a:hover {
   flex-direction: column;
   width: 40%;
 }
+/* Témoignages fin */
 
+/* actualités */
+.news{
+  background: no-repeat center/100% url(images/fond-twini_Page_2.jpg);
+  height: 38rem;
+  color: #22577A;
 }
 
+.news h2{
+  color:  white;
+  text-align: center;
+  font-size: 50px;
+  padding-block: 2rem;
+}
+
+.news div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+article {
+  border: solid 1.5px #C2D1D9;
+  background-color: white;
+  border-radius: 2px;
+  width: 16.6rem;
+  height: 29rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide */
+}
+
+article:hover {
+  transform: scale(1.05); /* Agrandissement léger */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Ombre douce */
+  border-color: #22577A; /* Changement de couleur de bordure au survol */
+}
+
+
+article img{
+  border-radius: 2px;
+}
+
+article figcaption{
+  margin: 10px 10px 0px;
+}
+
+.description{
+  /* border: solid 1px hotpink; */
+  display: flex;
+  flex-direction: column;
+  align-items: inherit !important;
+}
+
+h3{
+  margin: 10px;
+}
+
+.description p{
+  margin-inline: 10px;
+  font-size: 17px;
+}
+/* actualités fin */
+
+/* footer */
 .footer-section ul li {
   margin-bottom: 10px;
 }
@@ -731,44 +670,72 @@ button a:hover {
   margin: 0;
 }
 
-
-
-
-
-
-/* style footer
-footer{
-  width: 100%;
+footer {
   height: 200px;
+  width: 100%;
   background-color: #22577A;
+  color: #ffffff; 
+  font-size: 14px;
+}
+
+.footer-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ffffff33; 
 }
-footer p, footer a, footer h2{
-  color: white;
-  text-decoration: none;
+
+.footer-section {
+  padding: 0 ;
 }
-footer img{
+
+.logo-desc {
+  width: 60%;
+}
+.aboutUs, .contact{
+  width: 20%;
+  /* haut | droit | bas | gauche */
+  padding: 20px 0 0 20px;
+  
+}
+.footer-logo {
   width: 35px;
   height: 45px;
+  margin: 10px 0 1px 0;
+}
+
+.logo-desc p {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #C7F9CC;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #57CC99; /* Change color on hover */
 }
 
 .ligne{
   width: 1px;
   height: 150px;
   background-color: #C7F9CC;
-  margin: 10px;
 }
-footer i{
-  color: #C7F9CC;
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
-.footer-description{
-  width: 60%;
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Ubuntu;
 }
-.menu-footer{
-  width: 15%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
+/* footer fin*/
