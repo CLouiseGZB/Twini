@@ -67,4 +67,73 @@ h3{
 .description p{
   margin-inline: 10px;
   font-size: 17px;
+  font-family: Ubuntu;
 }
+
+/* Navbar */
+nav {
+  position: fixed; /* Fixe la navbar en haut de la page */
+  top: 0; /* Positionner la navbar en haut */
+  left: 0;
+  width: 100%; /* S'assurer qu'elle s'étend sur toute la largeur */
+  height: 61px;
+  background-color: #22577A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0 20px; 
+  color: white;
+  z-index: 1000; /* S'assurer qu'elle est au-dessus des autres éléments */
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin: 0 15px; 
+}
+
+nav li a:hover {
+  color: #80edd9;
+}
+
+nav a {
+  color: white;
+}
+
+nav li a {
+  text-decoration: none; 
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+nav img {
+  height: 40px;
+}
+
+nav button {
+  background-color: transparent;
+  border: white solid 1px;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+nav button a {
+  text-decoration: none;
+}
+
+nav button:hover {
+  background-color: white; /* Couleur de fond au survol */
+  color: #22577A; /* Couleur du texte */
+  transition: 0.1s;
+}
+
+nav button:hover a {
+  color: #22577A; /* Change la couleur du lien à l'intérieur */
+  transition: 0.1s;
+}
+/* navbar fin */
